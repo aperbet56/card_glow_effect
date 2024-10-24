@@ -138,3 +138,20 @@ body {
 .glow__section__blob--3 {
   background-color: #00f2ff;
 }
+
+/**** Responsive design Version mobile ****/
+
+@media screen and (max-width: 768px) {
+  .glow__section {
+    padding: 25px 15px;
+  }
+
+  .glow__section__card {
+    width: 100%;
+  }
+
+  .glow__section__blob {
+    width: 200px;
+    height: 200px;
+  }
+}
