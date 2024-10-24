@@ -1,0 +1,140 @@
+/**** Importation de la police "Roboto" ****/
+
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/**** Style général de la page ****/
+
+body {
+  width: 100%;
+  min-height: 100vh;
+  background-color: #000000;
+}
+
+.glow__section {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 14px;
+}
+
+.glow__section__card {
+  width: 240px;
+  height: 350px;
+  flex-shrink: 0;
+  border-radius: 10px;
+  cursor: pointer;
+  position: relative;
+  z-index: 1;
+  overflow: hidden;
+  padding: 5px;
+  background-color: rgba(128, 128, 128, 0.102);
+}
+
+.glow__section__top__layer {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  border-radius: 7px;
+  font-size: 28px;
+  background-color: rgb(26, 26, 26);
+  transition: background-color 0.4s ease-out;
+}
+
+.glow__section__top__layer__text {
+  color: #dbdbdb; 
+  padding: 10px;
+}
+
+/**** pointer est une caractéristique média CSS (cf. @media) qui permet de vérifier si le dispositif de saisie/d'entrée principal est un dispositif de pointage ****/
+@media (pointer: fine) {
+  .glow__section__card:hover > .glow__section__top__layer {
+    background-color: rgba(26, 26, 26, 0.7);
+  }
+}
+
+.glow__section__blob {
+  position: absolute;
+  top: 0;
+  left: 0;
+  filter: blur(40px);
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: rgb(255, 255, 255, 0.8);
+  z-index: -1;
+  opacity: 0;
+}
+
+.glow__section__blob--1 {
+  background-image: linear-gradient(
+      90deg,
+      rgb(237, 237, 237),
+      rgb(236, 236, 236)
+    ),
+    linear-gradient(
+      135deg,
+      rgb(163, 125, 62) 0%,
+      rgb(163, 125, 62) 22%,
+      rgb(149, 100, 59) 22%,
+      rgb(149, 100, 59) 32%,
+      rgb(134, 75, 56) 32%,
+      rgb(134, 75, 56) 37%,
+      rgb(120, 50, 53) 37%,
+      rgb(120, 50, 53) 51%,
+      rgb(105, 25, 50) 51%,
+      rgb(105, 25, 50) 55%,
+      rgb(91, 0, 47) 55%,
+      rgb(91, 0, 47) 100%
+    ),
+    linear-gradient(
+      112.5deg,
+      rgb(163, 125, 62) 0%,
+      rgb(163, 125, 62) 22%,
+      rgb(149, 100, 59) 22%,
+      rgb(149, 100, 59) 32%,
+      rgb(134, 75, 56) 32%,
+      rgb(134, 75, 56) 37%,
+      rgb(120, 50, 53) 37%,
+      rgb(120, 50, 53) 51%,
+      rgb(105, 25, 50) 51%,
+      rgb(105, 25, 50) 55%,
+      rgb(91, 0, 47) 55%,
+      rgb(91, 0, 47) 100%
+    ),
+    linear-gradient(
+      90deg,
+      rgb(163, 125, 62) 0%,
+      rgb(163, 125, 62) 22%,
+      rgb(149, 100, 59) 22%,
+      rgb(149, 100, 59) 32%,
+      rgb(134, 75, 56) 32%,
+      rgb(134, 75, 56) 37%,
+      rgb(120, 50, 53) 37%,
+      rgb(120, 50, 53) 51%,
+      rgb(105, 25, 50) 51%,
+      rgb(105, 25, 50) 55%,
+      rgb(91, 0, 47) 55%,
+      rgb(91, 0, 47) 100%
+    );
+  background-blend-mode: overlay, overlay, overlay, normal;
+}
+
+.glow__section__blob--2 {
+  background-color: #ffd700;
+}
+
+.glow__section__blob--3 {
+  background-color: #00f2ff;
+}
