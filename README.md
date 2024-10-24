@@ -6,7 +6,7 @@ Création de cartes ayant des bordures animées et avec effet projecteur au surv
 
 ## Démonstration
 
-Lien vers le projet :
+Lien vers le projet : https://aperbet56.github.io/card_glow_effect/
 
 ## Projet développé avec
 
